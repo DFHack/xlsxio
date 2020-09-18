@@ -88,14 +88,14 @@ Building with make
 Building with CMake (preferred method)
 - configure by running `cmake -G"Unix Makefiles"` (or `cmake -G"MSYS Makefiles"` on Windows) optionally followed by:
   + `-DCMAKE_INSTALL_PREFIX:PATH=<path>` Base path were files will be installed
-  + `-DBUILD_STATIC:BOOL=OFF` - Don't build static libraries
-  + `-DBUILD_SHARED:BOOL=OFF` - Don't build shared libraries
-  + `-DBUILD_TOOLS:BOOL=OFF` - Don't build tools (only libraries)
-  + `-DBUILD_EXAMPLES:BOOL=OFF` - Don't build examples
-  + `-DWITH_LIBZIP:BOOL=ON` - Use libzip instead of Minizip
+  + `-DXLSXIO_BUILD_STATIC:BOOL=OFF` - Don't build static libraries
+  + `-DXLSXIO_BUILD_SHARED:BOOL=OFF` - Don't build shared libraries
+  + `-DXLSXIO_BUILD_TOOLS:BOOL=OFF` - Don't build tools (only libraries)
+  + `-DXLSXIO_BUILD_EXAMPLES:BOOL=OFF` - Don't build examples
+  + `-DXLSXIO_WITH_LIBZIP:BOOL=ON` - Use libzip instead of Minizip
   + `-DLIBZIP_DIR:PATH=<path>` - Location of libzip library
   + `-DMINIZIP_DIR:PATH=<path>` - Location of Minizip library
-  + `-DWITH_WIDE:BOOL=ON` - Also build UTF-16 library (libxlsxio_readw)
+  + `-DXLSXIO_WITH_WIDE:BOOL=ON` - Also build UTF-16 library (libxlsxio_readw)
 - build and install by running `make install` (or `make install/strip` to strip symbols)
 
 Prebuilt binaries
