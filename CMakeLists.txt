@@ -1,4 +1,4 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.21)
 
 PROJECT(xlsxio DESCRIPTION "C libraries for reading and writing .xlsx files")
 
